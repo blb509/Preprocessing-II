@@ -5,16 +5,33 @@ nav {
     border-bottom: 2px dashed silver;
     display: flex;
     justify-content: space-around ;
+
+
     .top {
         display: flex;
         justify-content: space-between;
         width: 805px;
         margin: 15px 0;
+
+        @media @mobile {
+            width: 480px;
+            flex-direction: column;
+
+            h1 {
+                margin-left:  37%;
+            }
+        }
+
         ul {
             display: flex;
             justify-content: space-around;
             padding-top: 23px;
             width: 300px;
+
+            @media @mobile {
+                width: 480px;
+            }
+
             a {
                 text-decoration: none;
                 color: black;
