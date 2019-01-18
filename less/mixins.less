@@ -1,1 +1,24 @@
 // Mixins in here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.mybtn(@width: 180px, @height: 30px, @bgcolor: #2f888f) {
+    font-size: 14px;
+    width: @width;
+    height: @height;
+    color: white;
+    background-color: @bgcolor;
+    border: 1px solid @bgcolor;
+    border-radius: 10px;
+    .center;
+
+    @media @mobile {
+        width: 100%;
+        background-color: #17a1b8;
+    }
+
+}
